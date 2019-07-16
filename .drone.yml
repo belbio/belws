@@ -1,0 +1,43 @@
+---
+kind: pipeline
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+branches:
+  - master
+
+steps:
+
+- name: build_prod
+  image: monachus/hugo
+  settings:
+    pull: always
+  environment:
+    HUGO_BASE_URL: https://bel.bio
+  commands:
+    - bin/update_refs.py
+    - hugo --baseURL $HUGO_BASE_URL
+  when:
+    branch:
+    - master
+
+
+- name: upload_prod
+  image: plugins/s3-sync
+  settings:
+    bucket: bel.bio
+    access_key:
+      from_secret: aws_s3_access_key
+    secret_key:
+      from_secret: aws_s3_secret_key
+    source: public
+    target: /
+    acl: public-read
+    region: us-east-2
+    delete: true
+  when:
+    branch:
+    - master
