@@ -1,32 +1,27 @@
-# Syna Start
+# BEL.bio website
 
-This is a sample project that can be used to jump start your Syna project. It uses Syna theme and Hugo with sample files that introduce two simple pages, one for landing and one for the about page.
+This is the hugo-based website repository for the BEL.bio project. We are using the
+[Syna Hugo theme](https://themes.gohugo.io/syna/).
 
-## Installation
-
-To start using this starter you need to download this repository and update it's git submodules (Syna theme is added as a submodule).
-
-```
-git clone git@github.com:okkur/syna-start.git project-name && cd project-name
-git submodule init
-git submodule update
-```
 
 ## Usage
+
+> Prerequisites: Go, Hugo, aws (Amazon AWS cli and S3 write credentials)
 
 To start your website run the following commands:
 
 **Development**:
 ```
+$ git clone git@github.com:belbio/belws.git
 $ hugo server -D
 ```
 
 **Production**:
 ```
 $ hugo # This command would generate the static website in the public/ directory
-```
 
-> Prerequisites: Go, Hugo
+aws s3 sync "public" "s3://bel.bio" --acl "public-read"
+```
 
 ## Directory Structure
 
@@ -52,9 +47,12 @@ directory. Read our [image fallthrough documentation](https://syna.okkur.org/doc
 Further details read our [full documentation](https://syna.okkur.org/docs).
 
 
-## Notes
+## Credits
 
-Background image: https://pixabay.com/illustrations/virus-microscope-infection-disease-4030721/
+Website:
 
-Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Pixabay</a>
+* [Hugo](https://gohugo.io/) static site generator
+* [Syna Hugo theme](https://themes.gohugo.io/syna/)
+* [Home page hero background image](https://pixabay.com/illustrations/virus-microscope-infection-disease-4030721/) created by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Pixabay</a>
+
 

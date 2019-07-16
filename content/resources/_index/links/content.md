@@ -19,7 +19,7 @@ title = "Resource Links"
 * [Open-source github repositories](https://github.com/belbio)
 * [BEL API repo](https://github.com/belbio/bel_api)
 * [BEL Python library](https://github.com/belbio/bel)
-* [BEL Language Specifications](https://github.com/bel_specifications)
+* [BEL Language Specifications](https://github.com/belbio/bel_specifications)
 * [BEL Resources tools](https://github.com/belbio/bel_resources) - tools to create namespaces, orthologies, nanopubs from various data sources
 * [BEL Resources](http://resources.bel.bio) - website to download namespaces, etc maintained by BEL.bio
 
