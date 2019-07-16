@@ -18,7 +18,6 @@ steps:
   environment:
     HUGO_BASE_URL: https://bel.bio
   commands:
-    - bin/update_refs.py
     - hugo --baseURL $HUGO_BASE_URL
   when:
     branch:
