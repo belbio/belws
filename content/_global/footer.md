@@ -3,19 +3,17 @@ fragment = "footer"
 #disabled = true
 date = "2016-09-07"
 weight = 1200
-#background = ""
+background = "dark"
 
-menu_title = "Link Title"
+# menu_title = "Links"
 
 [asset]
   title = "Logo Title"
-  image = "logo.svg"
-  text = "Logo Subtext"
-  url = "#"
+  image = "belbio-logo-inverted-clear-800x478.png"
+  text = "BELbio Logo"
+  url = "/"
 +++
 
-#### Description Title
+#### Sponsored by BioDati, Inc
 
-Project description such as:
-Open source theme for your next project
-Provided by Okkur Labs
+Proudly sponsored by BioDati, Inc to support the excellent work of many people and companies and thousands of hours that have gone into developing BEL.

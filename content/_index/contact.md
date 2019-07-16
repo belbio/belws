@@ -1,17 +1,17 @@
 +++
 fragment = "contact"
-#disabled = true
+disabled = true
 date = "2017-09-10"
 weight = 1100
 #background = "light"
 form_name = "defaultContact"
 
-title = "Contact fragment"
-subtitle  = "*not working on demo page*"
+title = "Contact Us"
+# subtitle  = "*not working on demo page*"
 
 # PostURL can be used with backends such as mailout from caddy
-post_url = "https://example.com/mailout" #default: formspree.io
-email = "mail@example.com"
+post_url = ""  # default: formspree.io
+email = "whayes@biodati.com"
 button = "Send Button" # defaults to theme default
 #netlify = false
 
@@ -32,10 +32,6 @@ button = "Send Button" # defaults to theme default
   text = "Your Email *"
   #error = "" # defaults to theme default
 
-[fields.phone]
-  text = "Your Phone *"
-  #error = "" # defaults to theme default
-
 [fields.message]
   text = "Your Message *"
   #error = "" # defaults to theme default
@@ -45,7 +41,7 @@ button = "Send Button" # defaults to theme default
 [[fields.hidden]]
   name = "page"
 
-[[fields.hidden]]
-  name = "someID"
-  value = "example.com"
+# [[fields.hidden]]
+#  name = "page"
+#  value = "bel.bio/contact"
 +++

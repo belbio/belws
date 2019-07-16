@@ -50,3 +50,11 @@ images in their own fragment directory, page directory and `static/images`
 directory. Read our [image fallthrough documentation](https://syna.okkur.org/docs/image-fallthrough/) for more info.
 
 Further details read our [full documentation](https://syna.okkur.org/docs).
+
+
+## Notes
+
+Background image: https://pixabay.com/illustrations/virus-microscope-infection-disease-4030721/
+
+Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Pixabay</a>
+
