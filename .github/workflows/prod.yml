@@ -6,8 +6,6 @@ on:
             - master
             - develop
 
-
-name: build and publish bel.bio
 jobs:
     build_and_publish:
         name: build and publish to bel.bio
