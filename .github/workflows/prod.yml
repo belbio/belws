@@ -19,7 +19,7 @@ jobs:
                   # extended: true # handles SASS files
 
             - name: Build
-              run: hugo --minify --baseURL https://bel.bio
+              run: hugo --baseURL https://bel.bio
 
             - uses: jakejarvis/s3-sync-action@v0.5.0
               with:
