@@ -18,8 +18,12 @@ jobs:
                   hugo-version: "0.58.3"
                   # extended: true # handles SASS files
 
+            - run: ls -alF
+
             - name: Build
               run: hugo --baseURL https://bel.bio
+
+            - run: ls -alF public
 
             - uses: jakejarvis/s3-sync-action@v0.5.0
               with:
