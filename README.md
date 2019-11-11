@@ -1,6 +1,6 @@
 # BEL.bio website
 
-![Published](https://github.com/biodati/biodati.com.hugo/workflows/Published/badge.svg)
+![Published](https://github.com/belbio/belws/workflows/Published/badge.svg)
 
 This is the hugo-based website repository for the BEL.bio project. We are using the
 [Syna Hugo theme](https://themes.gohugo.io/syna/).
