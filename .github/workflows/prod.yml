@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: Publish
+=======
+name: Published
+>>>>>>> develop
 
 on:
     push:
@@ -7,7 +11,11 @@ on:
 
 jobs:
     build_and_publish:
+<<<<<<< HEAD
         name: build and publish to bel.bio 2
+=======
+        name: build and publish to bel.bio
+>>>>>>> develop
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@master
