@@ -1,0 +1,109 @@
+* {
+  background-color: #f8f9fa;
+  font-family: Helvetica;
+}
+
+h2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 230%;
+  color: #33bdbe;
+  text-align: center;
+}
+
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 343px;
+  height: 400px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, .5);
+}
+
+
+textarea {
+  background: rgba(255, 255, 255, 0.4);
+  width: 276px;
+  height: 110px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 2px;
+  background-clip: padding-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 45px;
+  padding-right: 20px;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+input {
+  width: 276px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 4px;
+  background-clip: padding-box;
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+input.name,
+.subject,
+.email,
+.message {
+  background: rgba(255, 255, 255, 0.4);
+  padding-left: 45px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:focus,
+textarea:focus,
+.btn {
+  background-color: darkgray;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+  overflow: hidden;
+}
+
+.btn {
+  width: 138px;
+  height: 44px;
+  border-radius: 4px;
+  float: right;
+  background: #416b68;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#289797));
+  background-image: -ms-linear-gradient(top, #6da5a3 0%, #289797 100%);
+  padding: 10.5px 21px;
+  border-radius: 6px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  text-shadow: #333333 0 1px 0;
+  color: #e1e1e1;
+  border-color: #333333;
+}
+
+.btn:hover,
+.btn:active {
+  border: 1px solid #253737;
+  text-shadow: #333333 0 1px 0;
+  background: #33bdbe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+  background: -webkit-linear-gradient(top, #289797, #33bdbe);
+  background: -moz-linear-gradient(top, #289797, #33bdbe);
+  color: #fff;
+}
+
+
+}
