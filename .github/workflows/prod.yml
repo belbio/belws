@@ -1,0 +1,42 @@
+name: Publish
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build_and_publish:
+        name: build and publish to bel.bio 2
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@master
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2.2.2
+              with:
+                  hugo-version: "0.58.3"
+                  # extended: true # handles SASS files
+
+            - name: Build
+              run: hugo --minify --baseURL https://bel.bio
+
+            - uses: jakejarvis/s3-sync-action@v0.5.0
+              with:
+                  args: --acl public-read --follow-symlinks --delete
+              env:
+                  AWS_S3_BUCKET: bel.bio
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  AWS_REGION: "us-east-2"
+                  SOURCE_DIR: "public" # optional: defaults to entire repository
+
+            - name: Slack Notification
+              uses: homoluctus/slatify@master
+              if: always()
+              with:
+                  type: ${{ job.status }}
+                  job_name: "*Deployed bel.bio*"
+                  mention_if: "success"
+                  channel: "#devops"
+                  url: ${{ secrets.SLACK_DEVOPS_WEBHOOK }}

@@ -1,8 +1,9 @@
 # BEL.bio website
 
+![Published](https://github.com/biodati/biodati.com.hugo/workflows/Published/badge.svg)
+
 This is the hugo-based website repository for the BEL.bio project. We are using the
 [Syna Hugo theme](https://themes.gohugo.io/syna/).
-
 
 ## Usage
 
@@ -11,12 +12,14 @@ This is the hugo-based website repository for the BEL.bio project. We are using 
 To start your website run the following commands:
 
 **Development**:
+
 ```
 $ git clone git@github.com:belbio/belws.git
 $ hugo server -D
 ```
 
 **Production**:
+
 ```
 $ hugo # This command would generate the static website in the public/ directory
 
@@ -46,13 +49,10 @@ directory. Read our [image fallthrough documentation](https://syna.okkur.org/doc
 
 Further details read our [full documentation](https://syna.okkur.org/docs).
 
-
 ## Credits
 
 Website:
 
-* [Hugo](https://gohugo.io/) static site generator
-* [Syna Hugo theme](https://themes.gohugo.io/syna/)
-* [Home page hero background image](https://pixabay.com/illustrations/virus-microscope-infection-disease-4030721/) created by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Pixabay</a>
-
-
+-   [Hugo](https://gohugo.io/) static site generator
+-   [Syna Hugo theme](https://themes.gohugo.io/syna/)
+-   [Home page hero background image](https://pixabay.com/illustrations/virus-microscope-infection-disease-4030721/) created by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4030721">Pixabay</a>
