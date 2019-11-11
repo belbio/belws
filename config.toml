@@ -3,6 +3,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "BEL.bio"
 theme = "syna"
+googleAnalytics = "UA-151906497-1"
 enableGitInfo = true
 version = "0.15.0"
 
