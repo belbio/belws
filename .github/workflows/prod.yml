@@ -8,7 +8,7 @@ on:
 
 jobs:
     build_and_publish:
-        name: build and publish to bel.bio
+        name: build and publish to bel.bio 1
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@master
