@@ -7,6 +7,9 @@ googleAnalytics = "UA-151906497-1"
 enableGitInfo = true
 version = "0.15.0"
 
+[markup]
+   defaultMarkdownHandler = "blackfriday"
+
 [outputs]
   home = ["HTML", "JSON"]
 
