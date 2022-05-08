@@ -1,0 +1,38 @@
+name: Published
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_publish:
+    name: build and publish to bel.bio
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.2.2
+        with:
+          hugo-version: "0.98.0"
+          # extended: true # handles SASS files
+
+      - run: ls -alF
+      - run: hugo version
+      - run: hugo check
+
+      - name: Build
+        run: hugo --baseURL https://bel.bio
+
+      - run: ls -alF public
+
+      - uses: jakejarvis/s3-sync-action@v0.5.0
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ws-bel.bio
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: "us-east-1"
+          SOURCE_DIR: "public" # optional: defaults to entire repository
