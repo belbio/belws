@@ -20,7 +20,6 @@ jobs:
 
       - run: ls -alF
       - run: hugo version
-      - run: hugo check
 
       - name: Build
         run: hugo --baseURL https://bel.bio
