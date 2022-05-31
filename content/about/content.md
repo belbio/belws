@@ -14,7 +14,7 @@ BEL.bio is an organization that provides support for the open-standard BEL langu
 * [Open-source github repositories](https://github.com/belbio)
 * BEL Language documentation and learning resources at https://language.bel.bio
 * BEL resources hosted at http://resources.bel.bio
-* Community support at https://forum.bel.bio
+
 
 
 <div class="row">

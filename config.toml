@@ -91,11 +91,6 @@ googleAnalytics = ""
 #   weight = 30
 
 [[menu.copyright_footer]]
-  url = "https://forum.bel.bio"
-  name = "BEL Discussion Forum"
-  weight = 10
-
-[[menu.copyright_footer]]
   url = "https://language.bel.bio"
   name = "BEL Language Docs"
   weight = 30
